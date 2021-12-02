@@ -61,18 +61,6 @@ func main() {
 	}
 }
 
-func ints(s string) []int {
-	var i []int
-	for _, line := range strings.Split(s, "\n") {
-		n, err := strconv.Atoi(line)
-		if err != nil {
-			panic(err)
-		}
-		i = append(i, n)
-	}
-	return i
-}
-
 const input = `forward 8
 forward 3
 forward 8
